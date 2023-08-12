@@ -29,11 +29,11 @@ type User struct {
 // *Constants can be character, string, boolean, or numeric values.
 // *Constants cannot be declared using the := syntax.
 const (
-	host     = "localhost"
-	port     = 5432
-	user     = "postgres"
-	password = "peacemaker"
-	dbname   = "godb"
+	host     = "localhost" // the host address
+	port     = 5432 // the port
+	user     = [db username]
+	password = [db password]
+	dbname   = [db name]
 )
 
 // a function that sets up the database and establishes connection
@@ -105,12 +105,12 @@ func main() {
 			lastname,
 			sex
 		) VALUES
-		('bash', 'anakobembash@gmail.com', 'Bashir', 'Anakobe', 'male'),
-		('teemah', 'teemah247@gmail.com', 'Fatimah', 'Muhammed', 'female'),
-		('wasman', 'wasman01@gmail.com', 'Abdulwasiu', 'Anakobe', 'male'),
-		('medo', 'ahmed123@gmail.com', 'Ahmed', 'Ibrahim', 'male'),
-		('zain', 'zainyray@gmail.com', 'Zainab', 'Idris', 'female'),
-		('stacia', 'cheerfulann@gmail.com', 'Anastasia', 'Ugwu', 'female')
+		('bash', 'bash@gmail.com', 'Bashir', 'Anakobe', 'male'),
+		('teemah', 'teemah@gmail.com', 'Fatimah', 'Muhammed', 'female'),
+		('wasman', 'wasman@gmail.com', 'Abdulwasiu', 'Anakobe', 'male'),
+		('medo', 'medo@gmail.com', 'Ahmed', 'Ibrahim', 'male'),
+		('zain', 'zain@gmail.com', 'Zainab', 'Idris', 'female'),
+		('stacia', 'stacia@gmail.com', 'Anastasia', 'You', 'female')
 		;
 	`
 	// executing the query
